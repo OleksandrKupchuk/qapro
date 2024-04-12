@@ -2,8 +2,8 @@ package tests.L4;
 
 import com.codeborne.selenide.*;
 import com.codeborne.selenide.commands.Click;
-import io.art.tests.L4.CustomCond.Checked;
-import io.art.tests.L4.CustomCond.CustomConditions;
+import tests.L4.CustomCond.Checked;
+import tests.L4.CustomCond.CustomConditions;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;

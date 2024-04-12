@@ -2,7 +2,7 @@ package tests.L5_6.Utils;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
-import io.art.tests.L5_6.models.MapField;
+import tests.L5_6.models.MapField;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;

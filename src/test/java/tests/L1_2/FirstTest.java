@@ -14,7 +14,7 @@ public class FirstTest {
         Configuration.baseUrl = "https://the-internet.herokuapp.com";
 //        Configuration.browserSize = "100*100";
 
-        Configuration.browser = io.art.tests.L1_2.ChromeDriverInit.class.getName();
+        Configuration.browser = tests.L1_2.ChromeDriverInit.class.getName();
 //        Configuration.browser = ChromeDriverInit.class.getName();
 
 //        ChromeDriver chromeDriver = new ChromeDriver();
