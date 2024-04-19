@@ -8,7 +8,6 @@ import com.codeborne.selenide.WebDriverRunner;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.javafaker.Faker;
 import com.microsoft.playwright.*;
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.BeforeMethod;
@@ -90,8 +89,19 @@ public class Tests {
             Map<String, Object> response = (Map<String, Object>)entrie.get("response");
             int status = (int)response.get("status");
             Map<String, Object> request = (Map<String, Object>)entrie.get("request");
-            System.out.println(request.get("url") + " " + status);
-            System.out.println("body " + request.get("body"));
+            Map<String, Object> postData = (Map<String, Object>)request.get("postData");
+            List<Map<String, Object>> params = null;
+            if (postData != null){
+                params = (List<Map<String, Object>>) postData.get("params");
+            }
+            if (params != null){
+                System.out.println("postData = " + " " + postData);
+                System.out.println("params = " + " " + params);
+                for (Map<String, Object> param : params) {
+                    System.out.println("param name = " + param.get("name"));
+                    System.out.println("param value = " + param.get("value"));
+                }
+            }
         }
     }
 
