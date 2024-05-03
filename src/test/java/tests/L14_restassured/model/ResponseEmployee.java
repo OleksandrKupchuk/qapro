@@ -1,4 +1,4 @@
-package tests.Lesson14_restassured.model;
+package tests.L14_restassured.model;
 
 import lombok.*;
 

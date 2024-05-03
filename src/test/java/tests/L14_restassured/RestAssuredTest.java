@@ -1,4 +1,4 @@
-package tests.Lesson14_restassured;
+package tests.L14_restassured;
 
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
@@ -6,8 +6,8 @@ import io.restassured.response.Response;
 import org.json.JSONObject;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-import tests.Lesson14_restassured.model.RequestEmployee;
-import tests.Lesson14_restassured.model.ResponseEmployee;
+import tests.L14_restassured.model.RequestEmployee;
+import tests.L14_restassured.model.ResponseEmployee;
 
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.Matchers.contains;

@@ -3,7 +3,7 @@
 <suite name="login" parallel="classes" thread-count="3">
     <test name="Login test">
         <packages>
-            <package name="tests.L12_pattern.parallelSelenide"/>
+            <package name="tests.L13_remote.parallel"/>
         </packages>
     </test>
 </suite>
