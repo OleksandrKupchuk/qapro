@@ -29,6 +29,7 @@ public class PlaywrightApiTest {
         context = playwright.request().newContext(contextOptions);
     }
 
+    //Playwright не може виконати метод /post тому що звертається до приватного поля dateTime в класі OffsetDateTime
     @Test
     public void createOrder(){
         Faker faker = new Faker();
