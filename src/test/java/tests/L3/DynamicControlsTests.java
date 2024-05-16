@@ -12,6 +12,7 @@ public class DynamicControlsTests extends Base {
 
     @Test()
     public void test(){
+        //some code
         open();
         clickCheckbox();
         clickButton();
