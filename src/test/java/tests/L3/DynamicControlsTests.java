@@ -13,7 +13,6 @@ public class DynamicControlsTests extends Base {
     @Test()
     public void test(){
         open();
-        //somecode
         clickCheckbox();
         clickButton();
 //        Assert.assertTrue(loadingBarProcessing(20).is(not(visible)));
