@@ -13,7 +13,7 @@ public class DynamicControlsTests extends Base {
     @Test()
     public void test(){
         System.out.println("TEST WAS RUN");
-//        System.out.println("TEST WAS RUN");
+        System.out.println("TEST WAS RUN");
         open();
         clickCheckbox();
         clickButton();
