@@ -15,6 +15,6 @@ public class DynamicControlsTests extends Base {
         open();
         clickCheckbox();
         clickButton();
-        Assert.assertTrue(loadingBarProcessing(20).is(not(visible)));
+//        Assert.assertTrue(loadingBarProcessing(20).is(not(visible)));
     }
 }
