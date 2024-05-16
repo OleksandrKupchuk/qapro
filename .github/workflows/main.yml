@@ -8,9 +8,10 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
+    permissions:
+      checks: write
+      contents: read
     steps:
     - uses: actions/checkout@v2
     - name: Set up JDK 17
@@ -32,10 +33,6 @@ jobs:
         restore-keys: ${{ runner.os }}-m2
     - name: Run tests
       run: mvn -B test -Dgroups=release
-    - name: Generate Surefire Report
-      run: mvn surefire-report:report
-    - name: Upload Surefire Report
-      uses: actions/upload-artifact@v2
-      with:
-        name: Test Report
-        path: ${{ github.workspace }}/target/site/surefire-report.html
+    - name: Publish Test Report
+      if: success() || failure()
+      uses: scacap/action-surefire-report@v1

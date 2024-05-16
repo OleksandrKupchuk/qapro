@@ -9,7 +9,7 @@ public class Tests {
     @Test(groups = {"release"})
     public void alertTest(){
         Playwright playwright = Playwright.create();
-        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+        Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(true));
         BrowserContext browserContext = browser.newContext();
         Page page = browserContext.newPage();
         page.navigate("https://the-internet.herokuapp.com/javascript_alerts");
