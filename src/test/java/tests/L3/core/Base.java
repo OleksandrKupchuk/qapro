@@ -8,5 +8,6 @@ public class Base {
     @BeforeSuite
     public void setUp() {
         Configuration.baseUrl = "https://the-internet.herokuapp.com";
+        Configuration.browser = "chrome";
     }
 }
