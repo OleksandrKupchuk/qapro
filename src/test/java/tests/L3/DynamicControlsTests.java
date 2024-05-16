@@ -12,7 +12,6 @@ public class DynamicControlsTests extends Base {
 
     @Test(groups = {"release"})
     public void test(){
-        //some code
         open();
         clickCheckbox();
         clickButton();
