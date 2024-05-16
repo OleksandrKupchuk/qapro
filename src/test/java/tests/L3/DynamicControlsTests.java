@@ -10,7 +10,7 @@ import static tests.L3.pages.DynamicControlsPage.*;
 
 public class DynamicControlsTests extends Base {
 
-    @Test(groups = {"release"})
+    @Test()
     public void test(){
         open();
         clickCheckbox();
