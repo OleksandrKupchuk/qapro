@@ -31,6 +31,5 @@ jobs:
       if: always()
       with:
         name: Test Results
-        path: ${{ github.workspace }}/target/surefire-reports/TEST-TestSuite.xml
+        path: ${{ github.workspace }}/target/surefire-reports/TEST-*.xml
         reporter: java-junit
-        java-version: 17
